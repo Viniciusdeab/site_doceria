@@ -1,3 +1,5 @@
+/* geral e menu de navegação */
+
 html {
     font-family: 'Indie Flower', cursive;
     color: #373A3C;
@@ -52,3 +54,106 @@ a{
     margin-left: auto;
     margin-right: auto;
 }
+
+/* conteudo da pagina */
+
+.content{
+    position: absolute;
+    left: 300px;
+    width:calc(100% - 300px);
+}
+
+.content h2{
+    color: #006599;
+    margin-bottom: 30px;
+    font-size: 35px;
+}
+
+.sessao-bemvindo-content h2{
+    font-size: 48px;
+}
+
+section{
+    padding-left: 50px;
+}
+
+/* Sessão Bem-vindo */
+
+#sessao-bemvindo{
+    padding-left: 0;
+}
+
+.sessao-bemvindo-content{
+    padding-left: 50px;
+}
+
+#sessao-bemvindo .banner{
+    height: 500px;
+    background-image: url("img/banner2.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#sessao-bemvindo h2 {
+    margin-top: 70px;
+}
+
+#sessao-bemvindo::after, #sessao-sobre::after{
+    content: '';
+    display: block;
+    clear: both;
+    margin-bottom: 100px;
+}
+
+.sessao-minibanner{
+    width: 300px;
+    height: 400px;
+    background-image: url("img/banner3.jpg");
+    background-position: center;
+    background-size: cover;
+    float: left;
+    border-radius: 5px;
+}
+
+.sessao-descricao{
+    position: absolute;
+    left: 370px;
+    padding-right: 30px;
+}
+
+.sessao-descricao p{
+    line-height: 2;
+    font-size: 16px;
+    margin-bottom: 30px;
+    margin-left: 25px;
+    font-weight: 600;
+}
+
+.sessao-bemvindo-btn, form input[type=submit]{
+    background-color: #006599;
+    color:#FFF;
+    text-decoration: none;
+    padding: 20px 40px;
+    transition:0;
+    display: block;
+    width: 100px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 5px #2203cf;
+    margin-left: 25px;
+}
+
+.sessao-bemvindo-btn:hover, form input[type=submit]:hover{
+    background-color: #2790C6;
+    box-shadow: 0 5px #2203cf;
+}
+
+.sessao-bemvindo-btn:active, form input[type=submit]:active{
+    position: relative;
+    top: 5px;
+    box-shadow: none;
+}
+
+/* Sessão da galeria de produtos */
